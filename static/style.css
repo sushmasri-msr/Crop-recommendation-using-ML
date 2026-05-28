@@ -1,0 +1,347 @@
+/* ================= BODY ================= */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ================= NAVBAR ================= */
+
+nav {
+    height: 65px;
+    background: #30343b;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 60px;
+
+    gap: 30px;
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+    margin-right: auto;
+    font-size: 22px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00c853;
+}
+
+/* ================= HOME PAGE ================= */
+
+.home-bg {
+
+    background-image: url("/static/crops.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+}
+
+.hero {
+
+    height: calc(100vh - 65px);
+
+    background: rgba(0,0,0,0.45);
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    letter-spacing: 4px;
+}
+
+.hero h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.btn {
+
+    background: #00a86b;
+
+    color: white;
+
+    padding: 14px 35px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #008f5a;
+}
+
+/* ================= PAGE BACKGROUND ================= */
+
+.page-bg {
+
+    background-image: url("/static/img.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+}
+
+/* ================= LOGIN BOX ================= */
+
+.login-box {
+
+    width: 380px;
+
+    margin: 70px auto;
+
+    background: rgba(0,0,0,0.78);
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    color: white;
+}
+
+.login-box h2 {
+
+    color: #00c853;
+
+    margin-bottom: 25px;
+}
+
+/* ================= INPUT FIELDS ================= */
+
+.login-box input,
+.form-box input {
+
+    width: 90%;
+
+    padding: 12px;
+
+    margin: 10px 0;
+
+    border: none;
+
+    border-bottom: 2px solid #00c853;
+
+    background: transparent;
+
+    color: white;
+
+    outline: none;
+
+    font-size: 15px;
+}
+
+.login-box input::placeholder,
+.form-box input::placeholder {
+    color: #ddd;
+}
+
+/* ================= BUTTONS ================= */
+
+.login-btn,
+button {
+
+    width: 95%;
+
+    padding: 12px;
+
+    background: #00c853;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    margin-top: 15px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    font-size: 15px;
+}
+
+.login-btn:hover,
+button:hover {
+    background: #009624;
+}
+
+/* ================= SIGNUP ================= */
+
+.signup-text {
+    margin-top: 18px;
+}
+
+.signup-link {
+
+    color: #00c853;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+/* ================= SOCIAL LOGIN ================= */
+
+.or-text {
+    margin-top: 25px;
+}
+
+.social-login {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 10px;
+
+    margin-top: 15px;
+}
+
+.social-login a {
+
+    padding: 10px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+.google {
+    background: #db4437;
+}
+
+.facebook {
+    background: #1877f2;
+}
+
+.twitter {
+    background: #1da1f2;
+}
+
+.instagram {
+    background: #e1306c;
+}
+
+/* ================= FORM BOX ================= */
+
+.form-box {
+
+    width: 420px;
+
+    margin: 60px auto;
+
+    background: rgba(0,0,0,0.75);
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    text-align: center;
+
+    color: white;
+}
+
+.form-box h2 {
+    color: #00c853;
+    margin-bottom: 20px;
+}
+
+/* ================= RESULT ================= */
+
+.result {
+
+    margin-top: 25px;
+
+    padding: 18px;
+
+    background: white;
+
+    color: #222;
+
+    font-size: 22px;
+
+    border-radius: 6px;
+
+    font-weight: bold;
+}
+
+/* ================= ABOUT PAGE ================= */
+
+.about {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 38px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-image img {
+    width: 650px;
+    max-width: 90%;
+    height: auto;
+}
+
+.about-text {
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-text h3 {
+    font-size: 24px;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.about-text p {
+    font-size: 17px;
+    color: #666;
+    line-height: 1.8;
+}

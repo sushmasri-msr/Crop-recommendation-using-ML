@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">🌱 CROPMATE</div>
+    <a href="/">Home</a>
+    <a href="/login">Login</a>
+    <a href="/about">AboutUs</a>
+    <a href="/crop">Crop</a>
+</nav>
+
+<section class="about">
+
+    <h2>About Us</h2>
+
+    <div class="about-content">
+
+        <div class="about-image">
+            <img src="{{ url_for('static', filename='farmer.jpg') }}" alt="Farmer">
+        </div>
+
+        <div class="about-text">
+            <h3>
+                IMPROVING AGRICULTURE, IMPROVING LIVES,
+                CULTIVATING CROPS TO MAKE FARMERS INCREASE PROFIT.
+            </h3>
+
+            <p>
+                We use state-of-the-art machine learning technology to help users
+                guide through the entire farming process. Make informed decisions
+                to understand what crop to be grown, and nitrogen, potassium,
+                phosphorous and pH values that are present in the soil, humidity
+                and rainfall factors that affect your crop and keep them healthy
+                for a super awesome successful yield.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

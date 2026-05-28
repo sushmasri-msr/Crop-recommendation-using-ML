@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up - CropMate</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body class="page-bg">
+
+<nav>
+    <div class="logo">🌱 CROPMATE</div>
+    <a href="/">Home</a>
+    <a href="/login">Login</a>
+    <a href="/about">AboutUs</a>
+    <a href="/crop">Crop</a>
+</nav>
+
+<div class="login-box">
+
+    <h2>Create Account</h2>
+
+    <form action="/signup_success" method="POST">
+        <input type="text" name="name" placeholder="Enter Full Name" required>
+        <input type="email" name="email" placeholder="Enter Email" required>
+        <input type="password" name="password" placeholder="Create Password" required>
+        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+
+        <button type="submit" class="login-btn">Sign Up</button>
+    </form>
+
+    <p class="signup-text">Already have an account?</p>
+    <a href="/login" class="signup-link">Login here</a>
+
+</div>
+
+</body>
+</html>

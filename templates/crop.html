@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crop Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="page-bg">
+    <nav>
+        <div class="logo">🌱 CROPMATE</div>
+        <a href="/">Home</a>
+        <a href="/login">Login</a>
+        <a href="/about">AboutUs</a>
+        <a href="/crop">Crop</a>
+    </nav>
+
+    <div class="form-box">
+        <h2>Find out the most suitable crop to grow in your farm</h2>
+
+        <form method="POST">
+            <input type="number" name="N" placeholder="Nitrogen" required>
+            <input type="number" name="P" placeholder="Phosphorous" required>
+            <input type="number" name="K" placeholder="Potassium" required>
+            <input type="number" step="any" name="temperature" placeholder="Temperature" required>
+            <input type="number" step="any" name="humidity" placeholder="Humidity" required>
+            <input type="number" step="any" name="ph" placeholder="pH Level" required>
+            <input type="number" step="any" name="rainfall" placeholder="Rainfall" required>
+
+            <button type="submit">Predict</button>
+        </form>
+
+        {% if prediction %}
+        <div class="result">
+            You should grow <b>{{ prediction }}</b>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

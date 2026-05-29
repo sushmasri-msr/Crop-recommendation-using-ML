@@ -1,19 +1,37 @@
-**Machine Learning Based Crop Recommendation System with Developed GUI**
+### Machine Learning Based Crop Recommendation System with Developed GUI
 
-**About the Project**
+### About the Project
 
 This project is a Machine Learning-based Crop Recommendation System designed to help farmers identify the most suitable crop for cultivation based on soil and environmental conditions.
 
 The system analyzes important agricultural parameters such as Nitrogen (N), Phosphorus (P), Potassium (K), pH level, temperature, humidity, and rainfall to generate crop recommendations. A user-friendly web interface was developed using Flask, HTML, and CSS to make the system accessible and easy to use.
 
-**Published Research Work**
+## Screenshots
+
+### Home Page
+
+![Home Page](screenshots/home.png)
+
+### Login Page
+
+![Login page](screenshots/login.png)
+
+### Input Form
+
+![Input Form](screenshots/input.png)
+
+### Recommendation Result
+
+![Recommendation Result](screenshots/result.png)
+
+### Published Research Work
 
 This project is based on the research work published in:
 An Experimental Analysis of Machine Learning Techniques for Crop Recommendation, Nigerian Journal of Technology (NIJOTECH), 2024.
 
 **Publication Link:** https://nijotech.com/index.php/nijotech/article/view/3486
 
-**Results**
+### Results
 
 The Crop Recommendation System was trained and evaluated using multiple machine learning algorithms, including Random Forest, Decision Tree, XGBoost, and K-Nearest Neighbors (KNN).
 
@@ -29,12 +47,11 @@ The experimental analysis showed that the Random Forest algorithm achieved the b
 
 These results validate the effectiveness of machine learning techniques for crop recommendation and highlight the potential of the developed system in supporting modern agricultural practices.
 
-**Future Enhancements**
+### Future Enhancements
 
 - Integration of real-time weather data.
 - Mobile application development.
 - Multi-language support for farmers.
 
-**Author**
-
+### Author
 Sushma Sri Miryala
